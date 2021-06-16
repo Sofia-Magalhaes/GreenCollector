@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdefundo"
+    tools:context=".inicioActivity">
+
+    <TextView
+        android:id="@+id/direitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Todos os direitos reservados ©"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadEmpresa" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="239dp"
+        android:layout_height="194dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/cadPessoal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logog" />
+
+    <Button
+        android:id="@+id/cadPessoal"
+        android:layout_width="235dp"
+        android:layout_height="83dp"
+        android:onClick="login"
+        android:text="Login Empresarial"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verdebarra"
+        app:layout_constraintBottom_toTopOf="@+id/cadEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/cadEmpresa"
+        android:layout_width="235dp"
+        android:layout_height="83dp"
+        android:onClick="cadastroObjeto"
+        android:text="Cadastro de Objetos"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/verdebarra"
+        app:layout_constraintBottom_toTopOf="@+id/direitos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadPessoal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="88dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

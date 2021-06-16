@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projeto.gc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/apptheme">
+        <activity android:name=".telaempresa2Activity"></activity>
+        <activity android:name=".telaempresaActivity" />
+        <activity android:name=".posto4Activity" />
+        <activity android:name=".posto3Activity" />
+        <activity android:name=".posto2Activity" />
+        <activity android:name=".postoActivity" />
+        <activity android:name=".cadastroObjetoActivity" />
+        <activity android:name=".cadastroActivity" />
+        <activity android:name=".loginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".inicioActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
